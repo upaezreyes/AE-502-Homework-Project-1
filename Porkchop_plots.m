@@ -3,7 +3,7 @@ clc
 clear variables 
 
 %Calling position & velocity vectors from Earth: 
-[~,departure] = LoadData('Earth_Borisov.txt'); 
+[~,departure] = LoadData('Earth_Oumuamua.txt'); 
 %tdep = Data1(:,:)
 depart_t = departure.calDate(:,1); % time in columnw
 depart_v = departure.v(:,1:3); % velocity in column
@@ -13,7 +13,7 @@ depart_r = departure.r(:,1:3); % position in column
 % r_depart = sqrt(sum(departure_r.^2)); %magnitude of depart position
 
 %Calling position & velocity vectors from Oumuamau: 
-[err,arrival] = LoadData('Borisov.txt'); 
+[err,arrival] = LoadData('Oumuamua.txt'); 
 arriv_t = arrival.calDate(:,1); % time in column
 arriv_v = arrival.v(:,1:3); % velocity in column
 arriv_r = arrival.r(:,1:3); % position in column
